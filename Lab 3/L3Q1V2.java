@@ -13,7 +13,6 @@ public class L3Q1V2 {
 
     public static void main(String[] args) {
         int num1, num2, answer;
-        String input;
         char operand;
         boolean validOperand = true;
         Scanner k = new Scanner(System.in);

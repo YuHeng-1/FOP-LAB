@@ -13,7 +13,6 @@ public class L3Q5 {
         Scanner sc=new Scanner(System.in);
         double a,b,c,d,e,f,x,y;
         String temp[];
-        String input;
         System.out.print("Enter a,b,c,d,e,f: ");
         a=sc.nextDouble();
         b=sc.nextDouble();

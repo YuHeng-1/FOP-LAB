@@ -81,6 +81,29 @@ public class L6Q6 {
         return isPrime(a) && reverseSame(a);
     }
 
+    // cal is Pal Prime - alternative way 
+    static int prime(int num){
+        for(int i=2; i<=(num/2);i++){
+            if(num!=i && num%i==0)
+                return 0;
+        }
+        return num;
+    }
+    
+    static int palprime(int num){
+        String numstr = Integer.toString(num);
+        if (prime(num)==0)
+            return 0;
+        if(numstr.length()!=1){
+            for(int i=0;i<numstr.length()/2; i++){
+                if(numstr.charAt(i)!=numstr.charAt(numstr.length()-i-1))
+                    return 0;
+            }
+        }
+        return num;    
+    }
+    // end calpalprime
+
     public static boolean isEmirp(int b) {
         int reverseInt = reverseDigit(b);
         return isPrime(reverseInt) && isPrime(b) && !isPalindromePrime(b);
